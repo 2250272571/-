@@ -74,7 +74,7 @@ if __name__ == '__main__':
         # 初始化登录信息
         username, password, course_list, speed,tiku_config= init_config()
         # 规范化播放速度的输入值
-        speed = min(2.0, max(1.0, speed))
+        speed = 1.0
         if (not username) or (not password):
             username = input("请输入你的手机号，按回车确认\n手机号:")
             password = input("请输入你的密码，按回车确认\n密码:")
